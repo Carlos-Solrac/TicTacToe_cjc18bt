@@ -22,7 +22,7 @@ c.  Instead of X's and O's, give the ability to use college mascots.  X may be a
 
 ## Usage
 
-1.Download the jar executable.
+1. Download the jar executable.
 2. Select number of players.
 3. Select square to start the game.
 4. Winner is whoever gets 3 in a row vertically, horizontally, or diagonally. Winner/ first player goes first on a win or a tie and 2nd player goes first on a player 1 loss if the game is replayed.
