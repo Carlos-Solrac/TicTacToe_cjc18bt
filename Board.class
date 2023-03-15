@@ -1,0 +1,21 @@
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Board extends JPanel {
+    public Board() {
+        setLayout(new GridLayout(3, 3));
+        for (int i = 0; i < 9; i++) {
+            JButton button = new JButton();
+            button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    // handle button click here
+                }
+            });
+            add(button);
+        }
+    }
+}
