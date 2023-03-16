@@ -6,7 +6,7 @@ import java.awt.event.ActionEvent;
 
 /*
  * The game board is a 3x3 grid. Buttons are used to allow users/cpu to interact with the board. On action the board should be marked
- * with the players marker to claim the spot. 
+ * with the players marker to claim the spot. It will communicate with the MainGame class to update the game board as play progresses.
  */
 
 public class Board extends JPanel {
@@ -25,4 +25,4 @@ public class Board extends JPanel {
     }
 }
 
-// This basic implementation will eventuallyt evolve to include a custom background with custom player markers.
+// This basic implementation will eventually evolve to include a custom background with custom player markers.
