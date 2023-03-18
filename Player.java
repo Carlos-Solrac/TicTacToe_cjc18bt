@@ -10,13 +10,15 @@
     // Attributes
 
     private String name;
-    private char move;
+    private char symbol;
+    private int[][] moves;
     private boolean isHuman;
 
     // Constructor
-    public Player(String name, char move, boolean isHuman) {
+    public Player(String name,char symbol, int moves, boolean isHuman) {
         this.name = name;
-        this.move = move;
+        this.symbol = symbol;
+        this.moves = new int[3][3];
         this.isHuman = isHuman;
     }
 
@@ -25,8 +27,8 @@
         this.name = name;
     }
 
-    public void setMove(char move) {
-        this.move = move;
+    public void setMove(int row, int col) {
+        this.moves[row][col] = 1;
     }
 
     public void setIsHuman(boolean isHuman) {
@@ -38,8 +40,8 @@
         return name;
     }
 
-    public char getMove() {
-        return move;
+    public int[][] getMove() {
+        return this.moves;
     }
 
     public boolean getIsHuman() {

@@ -8,24 +8,18 @@
  public class CpuPlayer extends Player {
     // Attributes
 
-    // Select CPU difficulty
-    private int difficulty;
+   
 
     // Constructors
-    public CpuPlayer(String name, char move) {
-        super(name, move, false);
-        this.random = new Random();
+    public CpuPlayer(String name,char symbol, int moves, boolean isHuman) {
+        super("CPU", symbol, moves, false);
     }
 
    // Setters
-   public void setRandom(Random random) {
-    this.random = random;
-    }
+
 
     // Getters
-    public Random getRandom() {
-        return random;
-    }
+
 
     // Methods
 

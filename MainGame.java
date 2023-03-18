@@ -1,3 +1,6 @@
+import java.awt.Color;
+
+import javax.swing.JFrame;
 
 /*
  * The MainGame class handles user itnerface aspects of the game. It will be responsible for displaying 
@@ -8,13 +11,16 @@
  */
 
 
- public class MainGame {
+ public class MainGame extends JFrame {
+    
 
     public static void main(String[] args) {
-        Board gameBoard = new Board(new GridLayout(3,3));
-        gameBoard.setLayout;
+        Board board = new Board();
+        // ...
     }
 
- 
+    // other methods and attributes...
 }
+
+
 
